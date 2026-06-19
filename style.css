@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    /* Deep Charcoal Background */
+    background-color: #121212 !important;
+    color: #e4e4e7;
+}
+
+.glass-card {
+    background: rgba(30, 30, 30, 0.8) !important;
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05) !important;
+    transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(128, 128, 128, 0.3) !important;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #3f3f46;
+    border-radius: 10px;
+}
+
+/* Force all inputs to Charcoal Theme */
+input,
+select,
+textarea {
+    background: rgba(20, 20, 20, 0.9) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #f3f4f6 !important;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #a1a1aa !important;
+    box-shadow: 0 0 0 2px rgba(161, 161, 170, 0.2) !important;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in {
+    animation: fadeIn 0.4s ease forwards;
+}
+
+/* Refined Subtle Background Circles */
+#bg-animation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+    background-color: #121212;
+}
+
+.circle {
+    position: absolute;
+    bottom: -150px;
+    /* Very subtle opacity and small size */
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 50%;
+    animation: rise 30s infinite ease-in;
+}
+
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.4;
+    }
+
+    80% {
+        opacity: 0.4;
+    }
+
+    100% {
+        transform: translateY(-130vh) scale(1.5);
+        opacity: 0;
+    }
+}
+
+/* Hide animation class */
+.bg-hidden {
+    display: none !important;
+}
