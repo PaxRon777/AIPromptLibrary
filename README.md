@@ -7,6 +7,8 @@
 ![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind-lightitize.svg)
 
 ---
+![Alt Text](screenshot.png)
+---
 
 ## ✨ Features
 
