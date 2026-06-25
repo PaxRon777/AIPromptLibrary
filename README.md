@@ -2,12 +2,12 @@
 
 **Promptly** is a lightweight, sleek, and highly functional web application designed to help you organize, manage, and quickly access your collection of AI prompts. Whether you are working with ChatGPT, Midjourney, Claude, or any other LLM, Promptly keeps your "prompt engineering" workflow organized in one beautiful place. Includes a backup file to import with demo data.
 
+![Alt Text](screenshot.png)
+
 ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 ![Vanilla JS](https://img.shields.io/badge/JavaScript-Vanilla-yellow.svg)
 ![Tailwind CSS](https://img.shields.io/badge/CSS-Tailwind-lightitize.svg)
 
----
-![Alt Text](screenshot.png)
 ---
 
 ## ✨ Features
